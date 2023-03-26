@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Programming Language Advisor</string>
+    <string name="find_language">Find Programming Language!</string>
+    <string name="platforms">No Platform Is Selected.</string>
+
+    <string-array name="computing_platforms">
+        <item>Desktop development</item>
+        <item>Mobile development</item>
+        <item>Web development</item>
+    </string-array>
 </resources>
