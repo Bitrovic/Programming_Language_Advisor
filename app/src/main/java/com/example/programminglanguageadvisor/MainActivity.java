@@ -1,11 +1,15 @@
 package com.example.programminglanguageadvisor;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toolbar;
 
 import java.util.List;
 
@@ -16,6 +20,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        ConstraintLayout myLayout = (ConstraintLayout) findViewById(R.id.my_constraint_layout);
+        myLayout.setBackgroundColor(Color.parseColor("#E1F5FE"));
+
+        Spinner mySpinner = (Spinner)findViewById(R.id.computing_platforms);
+        //mySpinner.setBackgroundColor(Color.parseColor("#0D47A1"));
     }
 
     public void onClickFindBeer(View view){
