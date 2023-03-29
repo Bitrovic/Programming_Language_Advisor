@@ -4,13 +4,17 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toolbar;
 
+import java.sql.Array;
+import java.util.Arrays;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
@@ -21,11 +25,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.dark_blue)));
+
         ConstraintLayout myLayout = (ConstraintLayout) findViewById(R.id.my_constraint_layout);
-        myLayout.setBackgroundColor(Color.parseColor("#E1F5FE"));
+        myLayout.setBackgroundColor(Color.parseColor("#BBDEFB"));
 
         Spinner mySpinner = (Spinner)findViewById(R.id.computing_platforms);
-        //mySpinner.setBackgroundColor(Color.parseColor("#0D47A1"));
+        mySpinner.setBackgroundColor(Color.parseColor("#90CAF9"));
     }
 
     public void onClickFindBeer(View view){
